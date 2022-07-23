@@ -77,6 +77,17 @@ button {
   text-transform: uppercase;
   color: #ffa5ba;
   margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    margin-bottom: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
 }
 
 .products__title {
@@ -90,6 +101,16 @@ button {
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .sweetlist {
@@ -100,8 +121,11 @@ button {
     flex-direction: unset;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
   }
-  // gap: 32px;
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 .sweetlist__item {
   position: relative;
@@ -115,6 +139,10 @@ button {
   @media screen and (min-width: 768px) {
     width: 224px;
     height: 611px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 796px;
   }
 }
 
@@ -133,7 +161,11 @@ button {
   text-transform: uppercase;
 
   color: #ffffff;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 .sweetlist__title-icecream::before {
   display: block;
@@ -151,9 +183,18 @@ button {
     }
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    height: 224px;
     background-image: url(../images/icecream1Tab1.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/icecream1Tab2.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 394px;
+    background-image: url(../images/icecream1Desk1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icecream1Desk2.png);
     }
   }
 }
@@ -173,9 +214,19 @@ button {
     }
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    height: 224px;
     background-image: url(../images/icecoffee2Tab1.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/icecoffee2Tab2.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 394px;
+    background-size: contain;
+    background-image: url(../images/icecoffee2Desk1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icecoffee2Desk2.png);
     }
   }
 }
@@ -194,19 +245,27 @@ button {
       background-image: url(../images/milkshakes3Mob2.png);
     }
   }
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    height: 224px;
     background-image: url(../images/milkshakes3Tab1.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/milkshakes3Tab2.png);
     }
   }
-  
+  @media screen and (min-width: 1200px) {
+    height: 394px;
+    background-image: url(../images/milkshakes3Desk1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/milkshakes3Desk2.png);
+    }
+  }
 }
 .sweetlist__title::after {
   display: block;
   content: url(../images/Group4.svg);
   fill: #ffffff;
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .sweetlist__form {
@@ -222,8 +281,14 @@ button {
   height: 489px;
   border-radius: 24px;
   @media screen and (min-width: 768px) {
+    top: 138px;
     width: 224px;
     height: 473px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 261px;
+    width: 368px;
+    height: 535px;
   }
 }
 .box--icecream {
@@ -253,6 +318,21 @@ button {
 
   color: #ffffff;
   margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    width: 160px;
+    height: 150px;
+    font-size: 14px;
+    line-height: 176%;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 241px;
+    height: 106px;
+    font-size: 16px;
+    line-height: 176%;
+    /* or 28px */
+    margin-bottom: 60px;
+  }
 }
 .sweetlist-button {
   display: block;

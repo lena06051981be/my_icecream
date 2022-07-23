@@ -94,6 +94,21 @@ button {
   color: #ffa5ba;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .products__label {
+    font-size: 26px;
+    line-height: 1.1538461538;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__label {
+    font-size: 30px;
+    line-height: 1.1333333333;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+}
 
 .products__title {
   font-family: "Titan One";
@@ -107,6 +122,20 @@ button {
   color: #d41443;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 768px) {
+  .products__title {
+    font-size: 48px;
+    line-height: 1.1458333333;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__title {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+  }
+}
 
 .sweetlist {
   display: flex;
@@ -118,6 +147,12 @@ button {
     flex-direction: unset;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sweetlist {
+    gap: 32px;
   }
 }
 
@@ -136,6 +171,12 @@ button {
     height: 611px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .sweetlist__item {
+    width: 368px;
+    height: 796px;
+  }
+}
 
 .sweetlist__title {
   position: relative;
@@ -150,7 +191,13 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
+}
+@media screen and (min-width: 1200px) {
+  .sweetlist__title {
+    font-size: 30px;
+    line-height: 1.1333333333;
+  }
 }
 
 .sweetlist__title-icecream::before {
@@ -175,12 +222,25 @@ button {
 }
 @media screen and (min-width: 768px) {
   .sweetlist__title-icecream::before {
+    margin-bottom: 32px;
+    height: 224px;
     background-image: url(../images/icecream1Tab1.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .sweetlist__title-icecream::before {
     background-image: url(../images/icecream1Tab2.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sweetlist__title-icecream::before {
+    height: 394px;
+    background-image: url(../images/icecream1Desk1.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .sweetlist__title-icecream::before {
+    background-image: url(../images/icecream1Desk2.png);
   }
 }
 
@@ -206,12 +266,26 @@ button {
 }
 @media screen and (min-width: 768px) {
   .sweetlist__title-icecoffee::before {
+    margin-bottom: 32px;
+    height: 224px;
     background-image: url(../images/icecoffee2Tab1.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .sweetlist__title-icecoffee::before {
     background-image: url(../images/icecoffee2Tab2.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sweetlist__title-icecoffee::before {
+    height: 394px;
+    background-size: contain;
+    background-image: url(../images/icecoffee2Desk1.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .sweetlist__title-icecoffee::before {
+    background-image: url(../images/icecoffee2Desk2.png);
   }
 }
 
@@ -237,6 +311,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .sweetlist__title-milkshakes::before {
+    margin-bottom: 32px;
+    height: 224px;
     background-image: url(../images/milkshakes3Tab1.png);
   }
 }
@@ -245,12 +321,23 @@ button {
     background-image: url(../images/milkshakes3Tab2.png);
   }
 }
+@media screen and (min-width: 1200px) {
+  .sweetlist__title-milkshakes::before {
+    height: 394px;
+    background-image: url(../images/milkshakes3Desk1.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .sweetlist__title-milkshakes::before {
+    background-image: url(../images/milkshakes3Desk2.png);
+  }
+}
 
 .sweetlist__title::after {
   display: block;
   content: url(../images/Group4.svg);
   fill: #ffffff;
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .sweetlist__form {
@@ -268,8 +355,16 @@ button {
 }
 @media screen and (min-width: 768px) {
   .sweetlist__box {
+    top: 138px;
     width: 224px;
     height: 473px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sweetlist__box {
+    top: 261px;
+    width: 368px;
+    height: 535px;
   }
 }
 
@@ -300,6 +395,25 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .sweetlist__text {
+    width: 160px;
+    height: 150px;
+    font-size: 14px;
+    line-height: 176%;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sweetlist__text {
+    width: 241px;
+    height: 106px;
+    font-size: 16px;
+    line-height: 176%;
+    /* or 28px */
+    margin-bottom: 60px;
+  }
 }
 
 .sweetlist-button {
