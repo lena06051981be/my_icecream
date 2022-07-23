@@ -66,9 +66,20 @@ button {
   margin: 60px 0;
 }
 
-.poducts > .container {
-  display: flex;
-  align-items: center;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 16px;
+  }
 }
 
 .products__label {
@@ -102,6 +113,13 @@ button {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .sweetlist {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
 
 .sweetlist__item {
   position: relative;
@@ -111,6 +129,12 @@ button {
   width: 280px;
   height: 629px;
   background-color: #a6ffa5;
+}
+@media screen and (min-width: 768px) {
+  .sweetlist__item {
+    width: 224px;
+    height: 611px;
+  }
 }
 
 .sweetlist__title {
@@ -149,6 +173,16 @@ button {
     background-image: url(../images/icecream1Mob2.png);
   }
 }
+@media screen and (min-width: 768px) {
+  .sweetlist__title-icecream::before {
+    background-image: url(../images/icecream1Tab1.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .sweetlist__title-icecream::before {
+    background-image: url(../images/icecream1Tab2.png);
+  }
+}
 
 .sweetlist__title-icecoffee::before {
   display: block;
@@ -168,6 +202,16 @@ button {
 @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
   .sweetlist__title-icecoffee::before {
     background-image: url(../images/icecoffee2Mob2.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .sweetlist__title-icecoffee::before {
+    background-image: url(../images/icecoffee2Tab1.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .sweetlist__title-icecoffee::before {
+    background-image: url(../images/icecoffee2Tab2.png);
   }
 }
 
@@ -191,6 +235,16 @@ button {
     background-image: url(../images/milkshakes3Mob2.png);
   }
 }
+@media screen and (min-width: 768px) {
+  .sweetlist__title-milkshakes::before {
+    background-image: url(../images/milkshakes3Tab1.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .sweetlist__title-milkshakes::before {
+    background-image: url(../images/milkshakes3Tab2.png);
+  }
+}
 
 .sweetlist__title::after {
   display: block;
@@ -211,6 +265,12 @@ button {
   width: 280px;
   height: 489px;
   border-radius: 24px;
+}
+@media screen and (min-width: 768px) {
+  .sweetlist__box {
+    width: 224px;
+    height: 473px;
+  }
 }
 
 .box--icecream {
