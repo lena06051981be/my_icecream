@@ -54,9 +54,17 @@ button {
   background-color: aqua;
   margin: 60px 0;
 }
-.poducts > .container {
-  display: flex;
-  align-items: center;
+.container {
+  width: 100%;
+  // min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 16px;
+  }
 }
 .products__label {
   display: block;
@@ -88,8 +96,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // flex-wrap: wrap;
-  // gap: 16px;
+  @media screen and (min-width: 768px) {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
   // gap: 32px;
 }
 .sweetlist__item {
@@ -101,6 +112,10 @@ button {
   width: 280px;
   height: 629px;
   background-color: #a6ffa5;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 611px;
+  }
 }
 
 .sweetlist__title {
@@ -135,6 +150,12 @@ button {
       background-image: url(../images/icecream1Mob2.png);
     }
   }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/icecream1Tab1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icecream1Tab2.png);
+    }
+  }
 }
 .sweetlist__title-icecoffee::before {
   display: block;
@@ -149,6 +170,12 @@ button {
     background-image: url(../images/icecoffee2Mob1.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/icecoffee2Mob2.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/icecoffee2Tab1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icecoffee2Tab2.png);
     }
   }
 }
@@ -167,6 +194,13 @@ button {
       background-image: url(../images/milkshakes3Mob2.png);
     }
   }
+   @media screen and (min-width: 768px) {
+    background-image: url(../images/milkshakes3Tab1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/milkshakes3Tab2.png);
+    }
+  }
+  
 }
 .sweetlist__title::after {
   display: block;
@@ -187,6 +221,10 @@ button {
   width: 280px;
   height: 489px;
   border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 473px;
+  }
 }
 .box--icecream {
   background-color: #ffb8ca;
