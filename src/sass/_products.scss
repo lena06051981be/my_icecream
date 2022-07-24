@@ -1,53 +1,53 @@
-/* Сброс стилей / Reset styles */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-ul {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none; /* Убираем маркеры */
-}
-a {
-  color: currentColor;
-}
-/* убирает рамку при TAB */
-a:focus,
-button:focus,
-.modal-form__input,
-.modal-form__text,
-.mailing__input {
-  outline: currentColor;
-}
+// /* Сброс стилей / Reset styles */
+// p,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin: 0;
+// }
+// ul {
+//   margin: 0;
+//   padding-left: 0;
+//   list-style-type: none; /* Убираем маркеры */
+// }
+// a {
+//   color: currentColor;
+// }
+// /* убирает рамку при TAB */
+// a:focus,
+// button:focus,
+// .modal-form__input,
+// .modal-form__text,
+// .mailing__input {
+//   outline: currentColor;
+// }
 
-img {
-  display: block;
-  width: 100%;
-  min-width: 100%;
-  height: auto;
-}
+// img {
+//   display: block;
+//   width: 100%;
+//   min-width: 100%;
+//   height: auto;
+// }
 
-// End Reset
+// // End Reset
 
-/* Репета рекомендовал */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// /* Репета рекомендовал */
+// html {
+//   box-sizing: border-box;
+// }
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
-/* Рука-указатель */
-button {
-  cursor: pointer;
-}
+// /* Рука-указатель */
+// button {
+//   cursor: pointer;
+// }
 //  End my styles
 
 .products {
