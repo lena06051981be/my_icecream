@@ -4,8 +4,13 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './reset';
 @import './common';
+@import './vars';
+@import './base';
+@import './mixins';
 // @import "./mixin";
 // @import './example';
 // @import './header';
 @import './products';
+@import './customer-reviews-my';
