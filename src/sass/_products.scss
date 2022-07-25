@@ -153,6 +153,16 @@
     font-size: 30px;
     line-height: calc(34 / 30);
   }
+  transition: transform 550ms ease;
+  &:hover {
+    transform: scale(1.1);
+    @media screen and (min-width: 768px) {
+      transform: scale(1.2);
+    }
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.15);
+    }
+  }
 }
 .sweetlist__title-icecream::before {
   display: block;
