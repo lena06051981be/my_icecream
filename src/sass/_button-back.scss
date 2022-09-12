@@ -1,0 +1,39 @@
+.button-back-to-menu {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 9;
+  border: none;
+  background-color: rgb(218, 156, 135);
+  color: white;
+  cursor: pointer;
+  transform: skew(30deg);
+  
+
+  //   font-family: $dm-sans;
+  font-size: 14px;
+  font-weight: 700;
+
+  opacity: 0.4;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms ease;
+  &:hover {
+    transform: skew(0deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 35px;
+    right: 30px;
+    font-size: 24px;
+    padding: 15px;
+  }
+}
+
+.button-back-to-menu:hover {
+  opacity: 5;
+  border-radius:60%;
+}
+
